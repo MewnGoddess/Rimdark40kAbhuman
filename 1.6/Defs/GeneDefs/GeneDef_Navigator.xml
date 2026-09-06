@@ -11,7 +11,14 @@
         <biostatCpx>4</biostatCpx>
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>61</displayOrderInCategory>
-
+        <forcedHeadTypes>
+            <li>Male_AverageNormal</li>
+            <li>Male_AveragePointy</li>
+            <li>Male_AverageWide</li>
+            <li>Female_AverageNormal</li>
+            <li>Female_AveragePointy</li>
+			<li>Female_AverageWide</li>
+        </forcedHeadTypes>
         <exclusionTags>
             <li>Psyker</li>
             <li>Pariah</li>

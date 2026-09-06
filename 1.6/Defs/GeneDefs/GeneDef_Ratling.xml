@@ -4,13 +4,31 @@
     <!-- Ratling: Nimble Physique -->
     <GeneDef ParentName="BEWH_AbhumanGenesOverallParent">
         <defName>BEWH_RatlingNimblePhysique</defName>
-        <label>nimble Physique</label>
+        <label>nimble physique</label>
         <description>[Placeholder]</description>
         <iconPath>UI/Genes/Ratling/BEWH_NimblePhysique</iconPath>
         <biostatCpx>3</biostatCpx>
         <biostatMet>-1</biostatMet>
         <displayOrderInCategory>1</displayOrderInCategory>
-
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/Ratling/HeadAttachments/Ears/BEWH_RatlingEars</li>
+                </texPaths>
+                <colorType>Skin</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
         <statFactors>
             <IncomingDamageFactor>1.15</IncomingDamageFactor>
             <MoveSpeed>1.15</MoveSpeed>
