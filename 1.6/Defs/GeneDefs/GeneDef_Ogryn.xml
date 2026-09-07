@@ -4,13 +4,19 @@
     <!-- Ogryn: Brute Physique -->
     <GeneDef ParentName="BEWH_AbhumanGenesOverallParent">
         <defName>BEWH_OgrynBrutePhysique</defName>
-        <label>brute Physique</label>
+        <label>brute physique</label>
         <description>[Placeholder]</description>
         <iconPath>UI/Genes/Ogryn/BEWH_BrutePhysique</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-4</biostatMet>
         <displayOrderInCategory>21</displayOrderInCategory>
-
+        <forcedHeadTypes>
+            <li>BEWH_OgrynHeadM1</li>
+            <li>BEWH_OgrynHeadM2</li>
+            <li>BEWH_OgrynHeadM3</li>
+            <li>BEWH_OgrynHeadM4</li>
+            <li>BEWH_OgrynHeadF</li>
+        </forcedHeadTypes>
         <statFactors>
             <MeleeDamageFactor>1.95</MeleeDamageFactor>
         </statFactors>
@@ -21,13 +27,36 @@
             <CarryingCapacity>100</CarryingCapacity>
         </statOffsets>
         <customEffectDescriptions>
-            <li>Increased Size</li>
+            <li>Increased size</li>
         </customEffectDescriptions>
         <modExtensions>
             <li Class="Core40k.DefModExtension_GeneExtension">
                 <addedWorldCarryCapacity>500</addedWorldCarryCapacity>
             </li>
         </modExtensions>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/Ogryn/HeadAttachments/Ears/BEWH_Male_OgrynEars</li>
+                </texPaths>
+                <texPathsFemale>
+                    <li>Things/Pawn/Humanlike/Ogryn/HeadAttachments/Ears/BEWH_Female_OgrynEars1</li>
+                    <li>Things/Pawn/Humanlike/Ogryn/HeadAttachments/Ears/BEWH_Female_OgrynEars2</li>
+                </texPathsFemale>
+                <colorType>Skin</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
         <exclusionTags>
             <li>Physique</li>
         </exclusionTags>
