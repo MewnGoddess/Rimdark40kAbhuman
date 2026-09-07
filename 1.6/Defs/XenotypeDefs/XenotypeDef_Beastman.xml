@@ -12,13 +12,10 @@
         <genes>
             <li>BEWH_BeastmanGoatPhysique</li>
             <li>BEWH_BeastmanHooved</li>
-            <li>BEWH_BeastmanHorned</li>
             <li>BEWH_BeastmanInnateBloodlust</li>
             <li>BEWH_BeastmanRowdy</li>
             <li>BEWH_BeastmanHerdstoneAffinity</li>
             <li>VoiceRoar</li>
-            <!-- <li>Hair_BaldOnly</li> -->
-            <li>Beard_NoBeardOnly</li>
             <li>AptitudeTerrible_Plants</li>
             <li>AptitudeTerrible_Intellectual</li>
             <li>Body_Hulk</li>
@@ -42,7 +39,6 @@
         <genes Inherit="False">
             <li>BEWH_MinotaurPhysique</li>
             <li>BEWH_BeastmanHooved</li>
-            <li>BEWH_BeastmanHorned</li>
             <li>BEWH_BeastmanInnateBloodlust</li>
             <li>BEWH_BeastmanRowdy</li>
             <li>BEWH_BeastmanHerdstoneAffinity</li>
