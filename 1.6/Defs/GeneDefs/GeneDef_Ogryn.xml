@@ -56,6 +56,24 @@
                     </defaultData>
                 </drawData>
             </li>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/Ogryn/HeadAttachments/Ears/BEWH_OgrynEarringsNone</li>
+                </texPaths>
+                <texPathsFemale>
+                    <li>Things/Pawn/Humanlike/Ogryn/HeadAttachments/Ears/BEWH_OgrynEarringsNone</li>
+                    <li>Things/Pawn/Humanlike/Ogryn/HeadAttachments/Ears/BEWH_Female_OgrynEarrings2</li>
+                </texPathsFemale>
+                <parentTagDef>Head</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70.1</layer>
+                    </defaultData>
+                </drawData>
+            </li>
         </renderNodeProperties>
         <exclusionTags>
             <li>Physique</li>
